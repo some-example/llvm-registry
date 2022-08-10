@@ -29,7 +29,7 @@
         "strip": -1
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "$MATCH": "win64",
       "install": {
         "unzip": "",
@@ -45,7 +45,7 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "$MATCH": "win32",
       "install": {
         "unzip": "",

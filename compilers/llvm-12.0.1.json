@@ -7,7 +7,7 @@
         "sha256": "6321b81bafcbf25cf53ece6dadd5a64dc4fd0a5dd8cb88bc286d6c76b59901a8"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "strip": -1,
         "sha256": "4b05fb503481efd6f53276bf2d3ab494eca970b3056d00e3e689b190f674ec6c",
@@ -28,7 +28,7 @@
         "sha256": "80216090afc751b40c5509dc4dcb3bb38d76430e06f6eb16af348ec0dbebf865"
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "strip": -1,
         "sha256": "8c6a91cf735a5192885607788db2904d571f3e874a9717898f253982f723335a",

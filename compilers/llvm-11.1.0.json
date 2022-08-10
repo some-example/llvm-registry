@@ -21,14 +21,14 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "sha256": "ff750ef1d9e44ee5d4307d81162b52466e60f50acb0076a12e8c234eca8f8e5a",
         "strip": -1,
         "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/LLVM-11.1.0-win32.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "sha256": "21818f251940154c1fcad9c9325f2a92166774804942dab9ae0d45c94ecda290",
         "strip": -1,

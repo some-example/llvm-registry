@@ -28,14 +28,14 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "sha256": "0ef8b4ae4075796e344781971ede00075cc55fe8201e2ceb862904991d0cfe52",
         "strip": -1,
         "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-10.0.0/LLVM-10.0.0-win32.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "sha256": "67ed480f2b9330723256047ce74679af9f495d0688235edfa89b948e3bd8e67a",
         "strip": -1,

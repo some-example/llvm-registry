@@ -28,14 +28,14 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "sha256": "1c93b969c8e1e1b2e492419640923e2c9e425bd1b2b4db16001f0225bfd1ab3a",
         "strip": -1,
         "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/LLVM-14.0.3-win32.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "sha256": "cc7aecaefd90dce2dd42ac764f8a85a598f9b68f52a3acd15e406bc542254c18",
         "strip": -1,

@@ -21,14 +21,14 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "sha256": "4f8289521725e1826b709ff4092d6bf5ac3a5dbf64ff008d5012d99e3e74ba03",
         "strip": -1,
         "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-8.0.1/LLVM-8.0.1-win32.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "sha256": "c4a80f6cd080d290109b1d44e9397842509721c320955abdff7a3db5f3f0e203",
         "strip": -1,

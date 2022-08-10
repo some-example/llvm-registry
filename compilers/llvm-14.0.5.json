@@ -14,7 +14,7 @@
         "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/LLVM-14.0.5-woa64.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "strip": -1,
         "sha256": "acdf33c77f59a03d5d5f5c2a0b7bf5da533662aaab1e333f68d48af9c0804d3d",
@@ -35,7 +35,7 @@
         "sha256": "71f0412d94a55e4da1aeef9e03000b1a0e69b93d18be6964512de5fdde2021ad"
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "strip": -1,
         "sha256": "18f11670a8ac4ed31eed9d640da9f8b0b36e3d1cfd33c731ce61c5108f35728a",

@@ -14,7 +14,7 @@
         "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/LLVM-13.0.1-woa64.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "strip": -1,
         "sha256": "1bab3f57c2cd762cdd7caf88ef78fafe183c345919a9240526f94ebc25660710",
@@ -42,7 +42,7 @@
         "sha256": "ab96ac746c08c1792b6bf6a8d56809da70a16259cafc75d193cbcc4a2190bd1b"
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "strip": -1,
         "sha256": "23c53f056dc5bbdc1e3ae41ff2f7b3cbff1ced1367bcd38be646d0abb612d536",

@@ -35,14 +35,14 @@
         "strip": -1
       }
     },
-    "windows and (not arm64) and (not arm)": {
+    "windows and (not arm64) and (not x64)": {
       "install": {
         "sha256": "724f544e240ce95d1d34cad83796122aa2a5f6f01d6b6a601f2a62b7af1dfdc6",
         "strip": -1,
         "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.0/LLVM-13.0.0-win32.zip"
       }
     },
-    "windows and amd64": {
+    "windows and x64": {
       "install": {
         "sha256": "23f9afce7d16d2265dd577f8d8f2b323de2a1799b5dace60798392958fd2b7d6",
         "strip": -1,
