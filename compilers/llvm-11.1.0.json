@@ -10,14 +10,14 @@
     "linux and (not arm64)": {
       "install": {
         "sha256": "02e01458ee113d82c572c0dd551686521af0617e8f5286094403dc371cbe9211",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-11.1.0/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04.tar.bz2",
         "strip": -1
       }
     },
     "linux and arm": {
       "install": {
         "sha256": "6081ba1e47828aa38b0b80b6e5d5893d317ce9796d7b844516780f9d67b6f7ad",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/clang+llvm-11.1.0-armv7a-linux-gnueabihf.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-11.1.0/clang+llvm-11.1.0-armv7a-linux-gnueabihf.tar.bz2",
         "strip": -1
       }
     },
@@ -25,20 +25,20 @@
       "install": {
         "sha256": "ff750ef1d9e44ee5d4307d81162b52466e60f50acb0076a12e8c234eca8f8e5a",
         "strip": -1,
-        "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/LLVM-11.1.0-win32.zip"
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-11.1.0/LLVM-11.1.0-win32.zip"
       }
     },
     "windows and x64": {
       "install": {
         "sha256": "21818f251940154c1fcad9c9325f2a92166774804942dab9ae0d45c94ecda290",
         "strip": -1,
-        "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/LLVM-11.1.0-win64.zip"
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-11.1.0/LLVM-11.1.0-win64.zip"
       }
     },
     "linux and arm64": {
       "install": {
         "sha256": "2d48cbedbe952ebb85ae4bcc6b6c0e4f9a8f28750e7f16d59e41da667d3017ba",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-11.1.0/clang+llvm-11.1.0-aarch64-linux-gnu.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-11.1.0/clang+llvm-11.1.0-aarch64-linux-gnu.tar.bz2",
         "strip": -1
       }
     }

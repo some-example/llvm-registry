@@ -10,7 +10,7 @@
     "linux and arm": {
       "install": {
         "sha256": "9a7c89b440e67facaf1509eb55a607bb3464ac775fb02c8be194e53efd5efbc5",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/clang+llvm-14.0.3-armv7a-linux-gnueabihf.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/clang+llvm-14.0.3-armv7a-linux-gnueabihf.tar.bz2",
         "strip": -1
       }
     },
@@ -18,13 +18,13 @@
       "install": {
         "sha256": "2e652be97198da3506b2d6431dc668d9e8cd6102c37b8e450406f57fd3513fca",
         "strip": -1,
-        "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/LLVM-14.0.3-woa64.zip"
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/LLVM-14.0.3-woa64.zip"
       }
     },
     "osx": {
       "install": {
         "sha256": "7c179448b66aea99f6c51e6b561877c1323905d00e7780f555d17ad673d76a1d",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/clang+llvm-14.0.3-x86_64-apple-darwin.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/clang+llvm-14.0.3-x86_64-apple-darwin.tar.bz2",
         "strip": -1
       }
     },
@@ -32,20 +32,20 @@
       "install": {
         "sha256": "1c93b969c8e1e1b2e492419640923e2c9e425bd1b2b4db16001f0225bfd1ab3a",
         "strip": -1,
-        "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/LLVM-14.0.3-win32.zip"
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/LLVM-14.0.3-win32.zip"
       }
     },
     "windows and x64": {
       "install": {
         "sha256": "cc7aecaefd90dce2dd42ac764f8a85a598f9b68f52a3acd15e406bc542254c18",
         "strip": -1,
-        "unzip": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/LLVM-14.0.3-win64.zip"
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/LLVM-14.0.3-win64.zip"
       }
     },
     "linux and arm64": {
       "install": {
         "sha256": "6af84ccaf4be29cdef1f54ba125a1e45086f33306736dc08cc701a7fa1baa77b",
-        "untar": "https://github.com/some-example/llvm-registry/releases/llvmorg-14.0.3/clang+llvm-14.0.3-aarch64-linux-gnu.tar.bz2",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.3/clang+llvm-14.0.3-aarch64-linux-gnu.tar.bz2",
         "strip": -1
       }
     }
