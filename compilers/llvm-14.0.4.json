@@ -1,0 +1,58 @@
+{
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  },
+  "demands": {
+    "linux and arm": {
+      "install": {
+        "sha256": "6da9d169abc1098f385ccf0a5f3d3259fd61dab6c86be9df487d32aca843b003",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/clang+llvm-14.0.4-armv7a-linux-gnueabihf.tar.bz2",
+        "strip": -1
+      }
+    },
+    "windows and arm64": {
+      "install": {
+        "sha256": "401a84658cfd92aa1e4fed422d282727143b774a26837181ec26dfab6de19323",
+        "strip": -1,
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/LLVM-14.0.4-woa64.zip"
+      }
+    },
+    "osx": {
+      "install": {
+        "sha256": "2dd0fc960c0cff72f76867d280166bc774efba89e7563ec4d391dbea1c9b49b9",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/clang+llvm-14.0.4-x86_64-apple-darwin.tar.bz2",
+        "strip": -1
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "install": {
+        "sha256": "f7c2fd92a42e57b46752f034aa70a0e38d034729455bd9c8e6b70ffd07ffe8fa",
+        "strip": -1,
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/LLVM-14.0.4-win32.zip"
+      }
+    },
+    "windows and amd64": {
+      "install": {
+        "sha256": "683372f5afe37e1d9a1b705ab573b28182f29f209f30549369fe4dfe43ccffc8",
+        "strip": -1,
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/LLVM-14.0.4-win64.zip"
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "sha256": "07a671a45ae740c64e0354effcc3bfb357e152ce293a20d7edb6617ae6b3bad3",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.4/clang+llvm-14.0.4-aarch64-linux-gnu.tar.bz2",
+        "strip": -1
+      }
+    }
+  },
+  "info": {
+    "version": "14.0.4",
+    "id": "compilers/llvm",
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation."
+  }
+}

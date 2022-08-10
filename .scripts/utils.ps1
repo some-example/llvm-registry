@@ -22,3 +22,16 @@ function get-environment() {
 function set-environment($env) {
   $env.GetEnumerator() |% { set-item "env:$($_.Name)" $_.value } 
 }
+
+
+function ~() {
+  if ($isVerbose ) {
+    iex (($args |% { if( $_ -match " ") {"'$_'" } else { "$_" } } ) -join " ")
+  }
+}
+
+function //() {
+  if ($isDebug ) {
+    iex (($args |% { if( $_ -match " ") {"'$_'" } else { "$_" } } ) -join " ")
+  }
+}

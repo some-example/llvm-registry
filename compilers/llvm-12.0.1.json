@@ -1,0 +1,51 @@
+{
+  "demands": {
+    "linux and arm": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-12.0.1/clang+llvm-12.0.1-armv7a-linux-gnueabihf.tar.bz2",
+        "strip": -1,
+        "sha256": "6321b81bafcbf25cf53ece6dadd5a64dc4fd0a5dd8cb88bc286d6c76b59901a8"
+      }
+    },
+    "windows and amd64": {
+      "install": {
+        "strip": -1,
+        "sha256": "4b05fb503481efd6f53276bf2d3ab494eca970b3056d00e3e689b190f674ec6c",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-12.0.1/LLVM-12.0.1-win64.zip"
+      }
+    },
+    "linux and (not arm64)": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-12.0.1/clang+llvm-12.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.bz2",
+        "strip": -1,
+        "sha256": "9d465a9fdfcd9e256a6868189e63aafa4a6df8a9cc104bdbc0611c93938fb975"
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-12.0.1/clang+llvm-12.0.1-aarch64-linux-gnu.tar.bz2",
+        "strip": -1,
+        "sha256": "80216090afc751b40c5509dc4dcb3bb38d76430e06f6eb16af348ec0dbebf865"
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "install": {
+        "strip": -1,
+        "sha256": "8c6a91cf735a5192885607788db2904d571f3e874a9717898f253982f723335a",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-12.0.1/LLVM-12.0.1-win32.zip"
+      }
+    }
+  },
+  "info": {
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation.",
+    "id": "compilers/llvm",
+    "version": "12.0.1"
+  },
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  }
+}

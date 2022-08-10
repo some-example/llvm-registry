@@ -1,0 +1,58 @@
+{
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  },
+  "demands": {
+    "linux and (not arm64)": {
+      "install": {
+        "sha256": "42bf48e7dc84a526b55a6e7280c7d8e75029cbe00bf7f04527c11d6cfbfd15fb",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/clang+llvm-9.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.bz2",
+        "strip": -1
+      }
+    },
+    "linux and arm": {
+      "install": {
+        "sha256": "41194bbce83b0f23cb589c3bd151063da35ebc46d05010b8147f91f13bd9a31a",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/clang+llvm-9.0.1-armv7a-linux-gnueabihf.tar.bz2",
+        "strip": -1
+      }
+    },
+    "osx": {
+      "install": {
+        "sha256": "160395402c84028e8fe5769a5899a4d238cef403aecdb19fe47fa7faa8e6303a",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/clang+llvm-9.0.1-x86_64-apple-darwin.tar.bz2",
+        "strip": -1
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "install": {
+        "sha256": "6f6e8c9345838c2baafe48bbc5d6691b65c18b76ae7273f34ed1fd7aa2a6238b",
+        "strip": -1,
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/LLVM-9.0.1-win32.zip"
+      }
+    },
+    "windows and amd64": {
+      "install": {
+        "sha256": "b726a12ebfe5e6a75716b8824150e20ab3f64e9293f6af86bf5716e880664cf3",
+        "strip": -1,
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/LLVM-9.0.1-win64.zip"
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "sha256": "6849568f3559854b7b656a0c02d278d2f70f2484e38b50692d4b7a32c0f36862",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-9.0.1/clang+llvm-9.0.1-aarch64-linux-gnu.tar.bz2",
+        "strip": -1
+      }
+    }
+  },
+  "info": {
+    "version": "9.0.1",
+    "id": "compilers/llvm",
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation."
+  }
+}

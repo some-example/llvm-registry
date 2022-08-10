@@ -1,0 +1,58 @@
+{
+  "demands": {
+    "linux and arm": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/clang+llvm-14.0.5-armv7a-linux-gnueabihf.tar.bz2",
+        "strip": -1,
+        "sha256": "557a386b40d5ac89ee5d33c357c3350f3b8a98d136039043736b81fc71546d6b"
+      }
+    },
+    "windows and arm64": {
+      "install": {
+        "strip": -1,
+        "sha256": "531d5dae6e5cffab5587379df6c56e7fa32226f8a01c1a84a9395c9deb93d290",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/LLVM-14.0.5-woa64.zip"
+      }
+    },
+    "windows and amd64": {
+      "install": {
+        "strip": -1,
+        "sha256": "acdf33c77f59a03d5d5f5c2a0b7bf5da533662aaab1e333f68d48af9c0804d3d",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/LLVM-14.0.5-win64.zip"
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/clang+llvm-14.0.5-x86_64-apple-darwin.tar.bz2",
+        "strip": -1,
+        "sha256": "404f03fc0e4a6d1c9df8741f573c5cc66157c00b935fb8bf4bafa9a020ae0d7c"
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/clang+llvm-14.0.5-aarch64-linux-gnu.tar.bz2",
+        "strip": -1,
+        "sha256": "71f0412d94a55e4da1aeef9e03000b1a0e69b93d18be6964512de5fdde2021ad"
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "install": {
+        "strip": -1,
+        "sha256": "18f11670a8ac4ed31eed9d640da9f8b0b36e3d1cfd33c731ce61c5108f35728a",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-14.0.5/LLVM-14.0.5-win32.zip"
+      }
+    }
+  },
+  "info": {
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation.",
+    "id": "compilers/llvm",
+    "version": "14.0.5"
+  },
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  }
+}

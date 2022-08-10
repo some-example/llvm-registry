@@ -1,0 +1,72 @@
+{
+  "info": {
+    "id": "compilers/llvm",
+    "version": "$VERSION",
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation.",
+  },
+  "demands": {
+    "linux and arm64": {
+      "$MATCH": "aarch64-linux",
+      "install": {
+        "untar": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "linux and arm": {
+      "$MATCH": "armv7a-linux",
+      "install": {
+        "untar": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "linux and (not arm64)": {
+      "$MATCH": "linux-gnu-ubuntu",
+      "install": {
+        "untar": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "windows and amd64": {
+      "$MATCH": "win64",
+      "install": {
+        "unzip": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "windows and arm64": {
+      "$MATCH": "woa64",
+      "install": {
+        "unzip": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "$MATCH": "win32",
+      "install": {
+        "unzip": "",
+        "sha256": "",
+        "strip": -1
+      }
+    },
+    "osx": {
+      "$MATCH": "darwin",
+      "install": {
+        "untar": "",
+        "sha256": "",
+        "strip": -1
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  }
+}

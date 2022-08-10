@@ -1,0 +1,65 @@
+{
+  "demands": {
+    "linux and arm": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/clang+llvm-13.0.1-armv7a-linux-gnueabihf.tar.bz2",
+        "strip": -1,
+        "sha256": "8f9a5067c6eb091dda021cafe87d16ab5e8bb6a743ab5c7f2ba18f4506b3da21"
+      }
+    },
+    "windows and arm64": {
+      "install": {
+        "strip": -1,
+        "sha256": "ecdac7fde2a5f745a8a1806c389c1278cb47b127e36bea99ff54a9765072485b",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/LLVM-13.0.1-woa64.zip"
+      }
+    },
+    "windows and amd64": {
+      "install": {
+        "strip": -1,
+        "sha256": "1bab3f57c2cd762cdd7caf88ef78fafe183c345919a9240526f94ebc25660710",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/LLVM-13.0.1-win64.zip"
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/clang+llvm-13.0.1-x86_64-apple-darwin.tar.bz2",
+        "strip": -1,
+        "sha256": "4bff839764ecd146462d81241c1b0dedfd3188954b2d0c0f6717244de77360ee"
+      }
+    },
+    "linux and (not arm64)": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/clang+llvm-13.0.1-x86_64-linux-gnu-ubuntu-18.04.tar.bz2",
+        "strip": -1,
+        "sha256": "345dc65b6501a330c190b568b9c54e7a772f4c67f48b41d08af33c6baf337ee9"
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/clang+llvm-13.0.1-aarch64-linux-gnu.tar.bz2",
+        "strip": -1,
+        "sha256": "ab96ac746c08c1792b6bf6a8d56809da70a16259cafc75d193cbcc4a2190bd1b"
+      }
+    },
+    "windows and (not arm64) and (not arm)": {
+      "install": {
+        "strip": -1,
+        "sha256": "23c53f056dc5bbdc1e3ae41ff2f7b3cbff1ced1367bcd38be646d0abb612d536",
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvm-13.0.1/LLVM-13.0.1-win32.zip"
+      }
+    }
+  },
+  "info": {
+    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation.",
+    "id": "compilers/llvm",
+    "version": "13.0.1"
+  },
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  }
+}

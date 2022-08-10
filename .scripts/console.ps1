@@ -31,7 +31,30 @@
 
 #>
 $script:indent= 0
-function :() { write-host -nonewline @args }
+function :() { 
+  $cmds = [System.Collections.ArrayList]::new()
+  $shh = $cmds.Add( [System.Collections.ArrayList]::new())
+  $args |% { 
+    if( $cmds[-1].Count -eq 0 ) {
+      $shh = $cmds[-1].Add(':');
+    }
+    if ($_ -match '^:' ) { 
+      $shh = $cmds.Add( [System.Collections.ArrayList]::new() )
+    }
+    if( $_ -match " ") {
+      $txt = $_ -replace '''',''''''
+      $shh = $cmds[-1].Add("'$txt'")
+
+    } else {
+      $shh = $cmds[-1].Add("$_")
+    }
+  }
+  if( $cmds.Count -gt 1 ) {
+    $cmds |% { $cmd = $_ -join " " ; iex $cmd }
+  } else {
+    write-host -nonewline @args 
+  }
+}
 function ::() { write-host @args; write-host -nonewline ("  " * $script:indent) }
 
 function :>() { 
@@ -277,4 +300,8 @@ function :<() {
 
 function :home() {
   : ([char]13)
+}
+
+function :note() {
+  :grey_exclamation " " |:darkgray @args 
 }
