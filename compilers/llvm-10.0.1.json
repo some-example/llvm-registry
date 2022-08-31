@@ -29,16 +29,14 @@
       }
     }
   },
-  "info": {
-    "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation.",
-    "id": "compilers/llvm",
-    "version": "10.0.1"
-  },
   "exports": {
     "paths": {
       "PATH": [
         "bin"
       ]
     }
-  }
+  },
+  "id": "compilers/llvm",
+  "version": "10.0.1",
+  "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation."
 }
