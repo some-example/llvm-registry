@@ -1,0 +1,42 @@
+{
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin"
+      ]
+    }
+  },
+  "demands": {
+    "osx and (not arm64)": {
+      "install": {
+        "sha256": "2b01a270c0dc6e1cd888583a7bc9d0b60120976782b25c7831042e21f56fa4ea",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvmorg-15.0.2/clang+llvm-15.0.2-x86_64-apple-darwin.tar.bz2",
+        "strip": -1
+      }
+    },
+    "windows and (not arm64) and (not x64)": {
+      "install": {
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvmorg-15.0.2/LLVM-15.0.2-win32.zip",
+        "sha256": "69a0c772422a3c04fb5af207de57f4410a41a1c0471b48abd674ce7064cbc138",
+        "strip": -1
+      }
+    },
+    "osx and arm64": {
+      "install": {
+        "sha256": "a1dd88ec6e9e5f89e788ea8fba66a8b1f808fe968bfed06cd11b42c14d196b03",
+        "untar": "https://github.com/some-example/llvm-registry/releases/download/llvmorg-15.0.2/clang+llvm-15.0.2-arm64-apple-darwin21.0.tar.bz2",
+        "strip": -1
+      }
+    },
+    "windows and x64": {
+      "install": {
+        "unzip": "https://github.com/some-example/llvm-registry/releases/download/llvmorg-15.0.2/LLVM-15.0.2-win64.zip",
+        "sha256": "3efc57767cb07885b0d67d1bfa6455ef984ff2de546c6b04f5988ecec046bc0e",
+        "strip": -1
+      }
+    }
+  },
+  "id": "compilers/llvm",
+  "version": "15.0.2",
+  "description": "LLVM is a next-generation compiler infrastructure. It is a collection of modular and reusable compiler technologies designed to build a wide variety of high-performance applications on a variety of platforms, with a focus on code generation."
+}

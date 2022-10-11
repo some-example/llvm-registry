@@ -102,7 +102,7 @@ try {
       ($_ -match "win64") `
       -or ($_ -match "win32") `
       -or ($_ -match "woa64") `
-      -or ( ($_ -match "clang.llvm") -and -not ( $_ -match "freebsd"  )  -and -not ( $_ -match "solaris"  ) -and -not ($_ -match "powerpc" ) )
+      -or ( ($_ -match "clang.llvm") -and -not ( $_ -match "freebsd"  )  -and -not ( $_ -match "solaris"  ) -and -not ($_ -match "powerpc" )  -and -not ($_ -match "sparc64" ) -and -not ($_ -match "rhel86"  ))
     }
 
     $localFiles = $files |% { download-asset $assetFolder $_ $llvm $tag} 
